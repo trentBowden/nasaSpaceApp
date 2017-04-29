@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+html, body {
+    padding-top: 50px;
+    /*background-color: ##f8ffff;*/
+    background-color: #f4f4ef;
+    padding-bottom: 50px;
+    /*box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);*/
+}
+
+a:hover, a:visited, a:link, a:active {text-decoration: none !important}
+
+/*
+pink f1a0a8
+blue 41BDAF
+blue darker 6fb8b6
+blue darker again #48a9a7
+orange EE704D
+
+*/
+
+
+.navbar-custom  {
+    padding-top: 10px;
+    /*padding-bottom: 10px;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em !important;
+    background-color:#6fb8b6;
+    color:#ffffff;
+    border-radius:0;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #48a9a7;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#6fb8b6;
+}

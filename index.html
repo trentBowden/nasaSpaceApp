@@ -1,0 +1,139 @@
+<!-- the all in one safety tool for emergency situations -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Basic website things -->
+    	<meta charset = "utf-8">
+    	<title> Wildfire. The all in one safety tool for emergency situations </title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <link rel = "stylesheet" href = "css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="navbar-custom navbar-fixed-top">
+            <div class="container">
+                <nav class="navbar">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img alt="User picture" src="images/robbie.png">
+                          </a>
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+
+                      <!-- <a class="navbar-brand" href="#"></a>  TODO decide whether to turn this off or not!-->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <!-- <p class="navbar-text">-Colour Coded-</p> -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="status.html">Status</a></li>
+                        <li><a href="emergency.html">Emergency Radio</a></li>
+                        <!-- <span class="badge">42</span>  -->
+
+                         <li><a href="info.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+
+                         <li><class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></li>
+
+
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <!-- Modal thing -->
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Broadcast Message</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>This message will be sent to everyone selected in your family list. </p>
+                      <form name=myText>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Calcel</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Send Message</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+              </div>
+            </div>
+
+
+
+            <A NAME="ALERT_panel">
+
+
+                <!-- This is where we will try to have a dismissable alert -->
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>Today's fire danger rating:</strong> High.
+                </div>
+
+                <!-- This will be the first panel, to show us of any alerts!
+                    We can have danger, warning, info or success-->
+            <div class="alert alert-danger" role="alert">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only">Notifications</span>
+              There is currently a fire within 2km of you.
+             <a href="#" class="alert-link">Check the status</a>
+            </div>
+
+            <!-- Now we will give people the option to report what is happening -->
+            <A NAME="REPORT_PANEL">
+            <div class="jumbotron">
+              <h1>Report</h1>
+              <p></p>
+              <a href="http://www.acsfoundation.com.au/bdi/">
+              <!-- <img src="https://innovationcentre.com.au/wp-content/uploads/2016/02/BDI-banner.jpg" alt = "The Big Day In!" width = "354px" height="134px"> </a> -->
+              <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+            </div>
+            <div class="jumbotron">
+              <h1>Status</h1>
+              <p></p>
+              <a href="http://www.acsfoundation.com.au/bdi/">
+            </div>
+            <div class="jumbotron">
+              <h1>Guide</h1>
+              <p></p>
+              <a href="http://www.acsfoundation.com.au/bdi/">
+            </div>
+            <div class="jumbotron">
+              <h1>Learn</h1>
+              <p></p>
+              <a href="http://www.acsfoundation.com.au/bdi/">
+            </div>
+
+
+
+        </div>
+
+        <!-- Compiled javascript, put at the end to help loading time I guess -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
