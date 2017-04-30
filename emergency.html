@@ -26,7 +26,7 @@
                   <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" data-toggle="modal" data-target=".bs-second-modal-lg">
                             <img alt="User picture" src="images/robbie.png">
                           </a>
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,15 +44,12 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                           <!-- <p class="navbar-text">-Colour Coded-</p> -->
+                           <li><class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="status.html">Status</a></li>
                         <li><a href="emergency.html">Emergency Radio</a></li>
                         <!-- <span class="badge">42</span>  -->
-
                          <li><a href="info.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
-
-                         <li><class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></li>
-
 
                       </ul>
                     </div><!-- /.navbar-collapse -->
@@ -95,7 +92,7 @@
 
               <p>
 
-                  <audio controls preload="none"><source src="http://live-radio01.mediahubaustralia.com/PBW/mp3/" type="audio/mpeg"></audio>
+                  <audio controls preload="none"><source src="http://live-radio01.mediahubaustralia.com:8042/;&type=mp3" type="audio/mpeg"></audio>
 
               </p>
               <a href="http://www.acsfoundation.com.au/bdi/">
